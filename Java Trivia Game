@@ -1,0 +1,51 @@
+# DDOS
+
+import java.util.Scanner;
+
+
+public class Trivia_Game {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		
+		String trivia;
+
+		System.out.println("Welcome to The Trivia Game");
+
+		System.out.print("What is your name: ");
+		trivia = input.next();
+
+		System.out.println("Hello "  + trivia);
+
+		System.out.print("Time for your first question! ");
+
+		System.out.print("ARE YOU READY!!!: ");
+		trivia = input.next();
+
+		if (trivia.equalsIgnoreCase("yes")){
+			System.out.println("Sweet");
+		} 
+
+		else if (trivia.equalsIgnoreCase("no")){
+			System.out.print("Please press alt+f4 and hit enter repeatedly. ");
+		}
+
+		System.out.println("How many superbowls have the Chicago Bears won?: ");
+		trivia = input.next();
+
+		if (trivia.equalsIgnoreCase("1")){
+			System.out.println("You Are Correct!");
+		}
+		System.out.println("Next Question");
+		System.out.println("");
+		trivia = input.next();
+		if (trivia.equalsIgnoreCase("")){
+			System.out.print("");
+			input.close();
+		}
+	}
+}
+
+
